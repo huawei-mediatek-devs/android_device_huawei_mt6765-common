@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/huawei/mt6761-common
+COMMON_PATH := device/huawei/mt6765-common
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -67,8 +67,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
-TARGET_KERNEL_CONFIG := merge_full_k61v1_64_mex_a32_defconfig
-TARGET_KERNEL_SOURCE := kernel/huawei/mt6761
+TARGET_KERNEL_CONFIG := merge_full_k62v1_64_mex_a32_defconfig
+TARGET_KERNEL_SOURCE := kernel/huawei/mt6765
 
 TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
@@ -136,14 +136,14 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 BOARD_HAS_MTK_HARDWARE := true
-TARGET_BOARD_PLATFORM := mt6761
+TARGET_BOARD_PLATFORM := mt6765
 
 # Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6761
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6765
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_huawei
 
 # Releasetools
@@ -160,4 +160,4 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 PRODUCT_USE_VNDK_OVERRIDE := true
 
 # Inherit the proprietary files
-include vendor/huawei/mt6761-common/BoardConfigVendor.mk
+include vendor/huawei/mt6765-common/BoardConfigVendor.mk

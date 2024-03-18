@@ -69,11 +69,11 @@ function blob_fixup() {
         vendor/bin/hw/hostapd)
             "${PATCHELF}" --add-needed "libcompiler_rt-v29.so" "${2}"
             ;;
-        vendor/lib*/hw/audio.primary.mt6761.so)
+        vendor/lib*/hw/audio.primary.mt6765.so)
             "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v28.so" "${2}"
             "${PATCHELF}" --replace-needed "libxml2.so" "libxml2-v28.so" "${2}"
             ;;
-        vendor/lib*/hw/dfps.mt6761.so)
+        vendor/lib*/hw/dfps.mt6765.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.2-impl.so)
