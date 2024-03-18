@@ -102,12 +102,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl
-
-# GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0.vendor \
-    android.hardware.gnss@1.1.vendor
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service.software
 
 # Health
 PRODUCT_PACKAGES += \

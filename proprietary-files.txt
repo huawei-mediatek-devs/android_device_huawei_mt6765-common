@@ -14,9 +14,6 @@ vendor/firmware/tas2557_uCDSP_GK.bin
 vendor/firmware/tfa98xx_AAC.cnt|db055ac22eff54be93c1bbe463d56bf0cda4a558
 vendor/firmware/tfa98xx_GK.cnt|8b85fd3e8a74785dc49d8c7c57f9400dc1f7b154
 vendor/firmware/tfa98xx_NONE.cnt|8b85fd3e8a74785dc49d8c7c57f9400dc1f7b154
-vendor/lib/hw/audio.primary.mt6765.so|6d191ebb2bbfca16e6ad3bdcec5c35afb6e763cd
-vendor/lib/hw/audio.r_submix.mt6765.so|b68dc01fe95d8dbda9135fa7fb5db8c15d6a4cd3
-vendor/lib/hw/audio.usb.mt6765.so|28bf3c74e19f72a3f5c86922227677ad5588d697
 vendor/lib/libMtkSpeechEnh.so|e95d0fa7150e28a05ebf319138f42ed595ddfeb7
 vendor/lib/libasd.so|51dfb684c78a333842cc4a0e01f58076ef4a751a
 vendor/lib/libaudio_custom_v2.so|8365d8e8ff2968355bf3fed1b41febee74bd78b0
@@ -391,15 +388,9 @@ vendor/etc/init/fuelgauged_init.rc|059d27cf33a84a559d45597be9f1f700dbb0d947
 vendor/etc/init/fuelgauged_nvram_init.rc|50d553439d88ac9ee006f5c3f8388f2911ecd38b
 vendor/lib/libfgauge_gm30.so|2167e0df61ea8425c5413f36d4819d30961ce429
 
-# Gatekeeper - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service;MODULE=android.hardware.gatekeeper@1.0-service.huawei|2e4a1aad553f65816c2daf35e72506f26c76d9cd
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc;MODULE=android.hardware.gatekeeper@1.0-service.huawei.rc|14787a28eab3435381646dde6e92e6d286a69fe2
-vendor/lib/hw/gatekeeper.mt6765.so|d4d0de5ad84f478d882c76b06e761b1a3f0bd087
-
 # Keymaster - from MRD-LX1-user 9 HUAWEIMRD-LX1 412-OVS-LGRP2 release-keys
 vendor/bin/hw/android.hardware.keymaster@3.0-service;MODULE=android.hardware.keymaster@3.0-service.huawei|5cb9191fc0fc24c9b58d9833433569edf3dfc454
 vendor/etc/init/android.hardware.keymaster@3.0-service.rc;MODULE=android.hardware.keymaster@3.0-service.huawei.rc|b0452f92b1f0ae823e928890a6e4ece25473e7be
-vendor/lib/hw/keystore.mt6765.so|a8b6c045439e777aa8705853180aca122c04279c
 vendor/lib/hw/android.hardware.keymaster@3.0-impl.so;MODULE=android.hardware.keymaster@3.0-impl-huawei.so|5d5e273d5388546248d2d92c39dfb1570e0609ea
 vendor/lib/libimonitor.so|26e36b8e02e0ed991d64b114a8666e04bb5a70ad
 
